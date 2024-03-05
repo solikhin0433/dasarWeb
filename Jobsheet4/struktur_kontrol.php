@@ -54,14 +54,11 @@ foreach($nilaiSiswa as $nilai) {
 }
 
 echo "<br>";
-echo "<br>";
 echo "Berikut adalah jawaban pada soal cerita 1";
 echo "<br>";
 $nilai_siswa = array(85, 92, 78, 64, 90, 75, 88, 79, 70, 96);
-
-// Urutkan nilai dari terkecil ke terbesar
+// Mengurutkan nilai terkecil ke terbesar
 sort($nilai_siswa);
-
 // Mengabaikan dua nilai terendah (indeks 0 dan 1)
 // dan dua nilai tertinggi (indeks 8 dan 9)
 $total_nilai = 0;
@@ -71,38 +68,36 @@ for ($i = 2; $i < 8; $i++) {
 $rata_rata = $total_nilai / 6;
 echo "Total nilai setelah mengabaikan dua nilai tertinggi dan dua nilai terendah: " . $total_nilai . "<br>";
 echo "Nilai rata-rata setelah mengabaikan dua nilai tertinggi dan dua nilai terendah: " . $rata_rata;
-
 echo "<br>";
 echo "<br>";
-
 
 echo "Berikut adalah jawaban pada soal cerita 2";
 
 echo "<br>";
+$harga_awal = 120000;
 
-$harga = 120000;
-$diskon = 0;
+// Batas diskon
+$batas_diskon = 100000;
 
-if($harga > 100000) {
-$diskon = 0.2;
+// Persentase diskon
+$persentase_diskon = 20;
+$harga_setelah_diskon = 0;
+if ($harga_awal > $batas_diskon) {
+    $diskon = ($persentase_diskon / 100) * $harga_awal;
+    $harga_setelah_diskon = $harga_awal - $diskon;
 } else {
-$diskon = 0;
+    $harga_setelah_diskon = $harga_awal;
 }
-
-$hargaDiskon = $harga - ($harga * $diskon);
-echo "Harga setelah diskon: {$hargaDiskon}";
-
+echo "Harga yang harus dibayar setelah mendapatkan diskon: Rp " . number_format($harga_setelah_diskon, 0, ',', '.') . "<br>";
 echo "<br>";
-echo "<br>";
-
 echo "Berikut adalah jawaban pada soal cerita 3";
-
 echo "<br>";
-
+// Skor pemain
 $skor = 700;
-
-echo "Total skor pemain: {$skor} <br>";
-
-$hadiah = ($skor >= 500) ? "Ya" : "Tidak";
-echo "Apakah pemain mendapatkan hadiah tambahan? {$hadiah}";
+// Total skor pemain
+$total_skor = "Total skor pemain adalah: " . $skor;
+// Apakah pemain mendapatkan hadiah tambahan?
+$hadiah_tambahan = ($skor > 500) ? "YA" : "TIDAK";
+echo $total_skor . "<br>";
+echo "Apakah pemain mendapatkan hadiah tambahan? " . $hadiah_tambahan;
 ?>
