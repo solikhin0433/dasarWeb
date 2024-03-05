@@ -56,27 +56,21 @@ foreach($nilaiSiswa as $nilai) {
 echo "<br>";
 echo "<br>";
 echo "Berikut adalah jawaban pada soal cerita 1";
-
 echo "<br>";
+$nilai_siswa = array(85, 92, 78, 64, 90, 75, 88, 79, 70, 96);
 
-$nilaiSiswa1 = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
-$totalNilai = 0;
-$rataRata = 0;
+// Urutkan nilai dari terkecil ke terbesar
+sort($nilai_siswa);
 
-for($i = 0; $i <count($nilaiSiswa1); $i++) { 
-    if ($nilaiSiswa1[$i] > 90) {
-        $nilaiSiswa1[$i] = 0;
-        continue;
-    } elseif ($nilaiSiswa1[$i] < 75) {
-        $nilaiSiswa1[$i] = 0;
-        continue;
-    }
-    $totalNilai +=$nilaiSiswa1[$i];
+// Mengabaikan dua nilai terendah (indeks 0 dan 1)
+// dan dua nilai tertinggi (indeks 8 dan 9)
+$total_nilai = 0;
+for ($i = 2; $i < 8; $i++) {
+    $total_nilai += $nilai_siswa[$i];
 }
-
-$rataRata = $totalNilai / (count($nilaiSiswa1) -2);
-
-echo "Nilai rata-rata: {$rataRata}" ;
+$rata_rata = $total_nilai / 6;
+echo "Total nilai setelah mengabaikan dua nilai tertinggi dan dua nilai terendah: " . $total_nilai . "<br>";
+echo "Nilai rata-rata setelah mengabaikan dua nilai tertinggi dan dua nilai terendah: " . $rata_rata;
 
 echo "<br>";
 echo "<br>";
@@ -90,9 +84,9 @@ $harga = 120000;
 $diskon = 0;
 
 if($harga > 100000) {
-    $diskon = 0.2;
+$diskon = 0.2;
 } else {
-    $diskon = 0;
+$diskon = 0;
 }
 
 $hargaDiskon = $harga - ($harga * $diskon);
