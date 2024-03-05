@@ -53,6 +53,61 @@ foreach($nilaiSiswa as $nilai) {
     echo "Nilai: $nilai (Lulus) <br>";
 }
 
+echo "<br>";
+echo "<br>";
+echo "Berikut adalah jawaban pada soal cerita 1";
+
+echo "<br>";
+
+$nilaiSiswa1 = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+$totalNilai = 0;
+$rataRata = 0;
+
+for($i = 0; $i <count($nilaiSiswa1); $i++) { 
+    if ($nilaiSiswa1[$i] > 90) {
+        $nilaiSiswa1[$i] = 0;
+        continue;
+    } elseif ($nilaiSiswa1[$i] < 75) {
+        $nilaiSiswa1[$i] = 0;
+        continue;
+    }
+    $totalNilai +=$nilaiSiswa1[$i];
+}
+
+$rataRata = $totalNilai / (count($nilaiSiswa1) -2);
+
+echo "Nilai rata-rata: {$rataRata}" ;
+
+echo "<br>";
+echo "<br>";
+
+
+echo "Berikut adalah jawaban pada soal cerita 2";
+
+echo "<br>";
+
+$harga = 120000;
+$diskon = 0;
+
+if($harga > 100000) {
+    $diskon = 0.2;
+} else {
+    $diskon = 0;
+}
+
+$hargaDiskon = $harga - ($harga * $diskon);
+echo "Harga setelah diskon: {$hargaDiskon}";
+
 echo "<br><br>";
 
+echo "Berikut adalah jawaban pada soal cerita 3";
+
+echo "<br>";
+
+$skor = 700;
+
+echo "Total skor pemain: {$skor} <br>";
+
+$hadiah = ($skor >= 500) ? "Ya" : "Tidak";
+echo "Apakah pemain mendapatkan hadiah tambahan? {$hadiah}";
 ?>
