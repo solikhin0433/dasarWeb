@@ -87,4 +87,9 @@ echo "<br>";
 echo 'Hasil Tidak Identik: ';
 var_dump($hasilTidakIdentik);
 echo "<br>";
+echo "<br>";
+
+$kursi = 45;
+$kursi_Terisi= (($kursi - 28) / $kursi) * 100;
+echo "Maka sisa kursi bentuk presentase: {$kursi_Terisi} <br>";
 ?>
