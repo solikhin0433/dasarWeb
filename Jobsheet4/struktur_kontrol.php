@@ -98,7 +98,8 @@ if($harga > 100000) {
 $hargaDiskon = $harga - ($harga * $diskon);
 echo "Harga setelah diskon: {$hargaDiskon}";
 
-echo "<br><br>";
+echo "<br>";
+echo "<br>";
 
 echo "Berikut adalah jawaban pada soal cerita 3";
 
