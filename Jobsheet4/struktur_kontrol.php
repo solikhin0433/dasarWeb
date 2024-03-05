@@ -56,7 +56,7 @@ foreach($nilaiSiswa as $nilai) {
 echo "<br>";
 echo "Berikut adalah jawaban pada soal cerita 1";
 echo "<br>";
-$nilai_siswa = array(85, 92, 78, 64, 90, 75, 88, 79, 70, 96);
+$nilai_siswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
 // Mengurutkan nilai terkecil ke terbesar
 sort($nilai_siswa);
 // Mengabaikan dua nilai terendah (indeks 0 dan 1)
