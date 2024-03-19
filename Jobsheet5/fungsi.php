@@ -26,7 +26,7 @@ function perkenalan($nama, $salam = "Assalamualaikum") {
     echo $salam . ", ";
     echo "Perkenalkan, nama saya " . $nama . "<br/> ";
 // memanggil fungsi lain
-echo "Saya Berusia " . hitungUmur(2003, 2024) . " tahun"; 
+echo "Saya berusia " . hitungUmur(2003, 2024) . " tahun"; 
 echo "Senang berkenalan dengan Anda <br/> ";
 }
 perkenalan("Khin");
