@@ -33,7 +33,7 @@ echo "<br>";
  echo "Jumlah buah yang akan dipanen adalah: $jumlahBuah";
  
  echo "<br><br>";
- $skorUjian = [85, 92, 78, 96, 88];
+$skorUjian = [85, 92, 78, 96, 88];
 $totalSkor = 0;
 
 foreach($skorUjian as $skor) {
@@ -72,13 +72,10 @@ echo "<br>";
 echo "<br>";
 
 echo "Berikut adalah jawaban pada soal cerita 2";
-
 echo "<br>";
 $harga_awal = 120000;
-
 // Batas diskon
 $batas_diskon = 100000;
-
 // Persentase diskon
 $persentase_diskon = 20;
 $harga_setelah_diskon = 0;
@@ -88,7 +85,8 @@ if ($harga_awal > $batas_diskon) {
 } else {
     $harga_setelah_diskon = $harga_awal;
 }
-echo "Harga yang harus dibayar setelah mendapatkan diskon: Rp " . number_format($harga_setelah_diskon, 0, ',', '.') . "<br>";
+echo "Harga yang harus dibayar setelah mendapatkan diskon: Rp " 
+. number_format($harga_setelah_diskon, 0, ',', '.') . "<br>";
 echo "<br>";
 echo "Berikut adalah jawaban pada soal cerita 3";
 echo "<br>";
