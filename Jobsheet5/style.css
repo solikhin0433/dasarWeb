@@ -9,7 +9,7 @@ th, td {
     text-align: left;
     padding : 16px;
 }
-tr : :nth-child(even){
+tr:nth-child(even){
     backround-color : #f2f2f2
 }
     
