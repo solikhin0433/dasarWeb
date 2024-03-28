@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styleSlide.css" />
-    <script src="jquery-3.7.1.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("flip").click(function () {
-          $("kotak2").slideDown("slow");
-        });
+<head>
+  <link rel="stylesheet" type="text/css" href="styleSlide.css" />
+  <script src="jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#kotak2").slideDown("slow");
       });
-    </script>
-  </head>
-  <body>
-    <div id="flip">Klik untuk Efek Slide</div>
-    <div id="Kotak2">Selamat Pagi</div>
-  </body>
+    });
+  </script>
+  <style>
+    #kotak2, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #a7dbd8;
+      border: solid 2px #e0e4cc;
+      border-radius: 5px;
+    }
+    #kotak2 {
+      padding: 50px;
+      display: none; /* Tambahkan style display:none; untuk menyembunyikan elemen awalnya */
+    }
+  </style>
+</head>
+<body>
+
+<div id="flip">Klik untuk Efek Slide</div>
+<div id="kotak2">Selamat Pagi</div>
+
+</body>
 </html>
