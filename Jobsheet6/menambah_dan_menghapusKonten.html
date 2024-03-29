@@ -11,7 +11,7 @@
                     var email = $("#email").val();
                     var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + email + "</td></tr>";
                     $("table tbody").append(markup);
-                })
+                });
 
                 //menghapus baris yang di centang
                 $(".delete-row").click(function() {
@@ -19,9 +19,9 @@
                         if ($(this).is(":checked")) {
                             $(this).parents("tr").remove();
                         }
-                    })
-                })
-            })
+                    });
+                });
+            });
         </script>
     </head>
     <body>
