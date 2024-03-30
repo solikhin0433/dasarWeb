@@ -16,12 +16,4 @@ if (isset($data["nama"])) {
 } else {
     echo "<br>Variable 'nama' tidak ditemukan dalam array.";
 }
-//empty()
-// $nama = ""; // Variabel string kosong
-// if(empty($nama)){
-//     echo "<br> Nama tidak terdifinisi atau kosong";
-// }
-// else {
-//     echo "Nama terdefinisi";
-// }
 ?>
