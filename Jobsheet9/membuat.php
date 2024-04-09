@@ -18,6 +18,7 @@ if (mysqli_query($koneksi, $query)) {
 } else {
     echo "Error: " . $query . "<br>" . mysqli_error($koneksi);
 }
+
 // Tutup koneksi
 mysqli_close($koneksi);
 ?>
