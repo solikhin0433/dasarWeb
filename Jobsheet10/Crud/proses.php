@@ -52,7 +52,5 @@ else if ($aksi == 'hapus'){
 else {
     header("Location: index.php");
 }
-
-
 mysqli_close($koneksi);
 ?>
