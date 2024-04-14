@@ -9,7 +9,7 @@ $result = mysqli_query($connect, $query); // Menggunakan variabel $connect yang 
 $cek = mysqli_num_rows($result);
 
 if($cek) {
-    echo "Anda berhasil login. Silahkan menuju "; ?>
+    echo "Anda berhasil login. Silahkan menuju" ?>
 <a href="homeAdmin.html">Halaman HOME</a>
 <?php
 } else {
