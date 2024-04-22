@@ -16,5 +16,4 @@ $car2 -> brand = "Honda";
 $car1->startEngine();
 
 echo $car2-> brand;
-
 ?>
